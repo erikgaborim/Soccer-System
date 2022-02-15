@@ -1,0 +1,23 @@
+CREATE TABLE clube(
+
+	id SERIAL NOT NULL PRIMARY KEY,
+	nome character varying(100),
+	titulos int, 
+	cidade character varying(100),
+	tecnico character varying(100)
+
+);
+
+CREATE TABLE jogador(
+
+	id SERIAL NOT NULL PRIMARY KEY,
+	nome character varying(100),
+	apelido character varying(30),
+	altura real,
+	peso real,
+	posicao character varying(30),
+	num_camisa int,
+	id_clube INT NOT NULL REFERENCES clube ON DELETE CASCADE ON UPDATE CASCADE,
+	CONSTRAINT fk_clube_atleta FOREIGN KEY (id_clube) REFERENCES clube(id)
+	
+);
