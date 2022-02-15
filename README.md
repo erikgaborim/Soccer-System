@@ -8,7 +8,7 @@ Dependencies: you need JDBC, PgAdmin and JDK installed to run.
 1. Clone this repository:
 
     ```console
-    git clone https://github.com/erikgaborim/LP3T2-JavaSQL.git
+    git clone https://github.com/erikgaborim/School-System.git
     ```
 2. Import it on Eclipse;
 3. Create a database on your PgAdmin, paste there the script "scriptSQL.txt" that's inside the folder "ScriptSQL" and run it there;
